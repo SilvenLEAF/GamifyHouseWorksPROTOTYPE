@@ -84,8 +84,10 @@ require('./config/passportConfig');
 .                   routes
 ------------------------------------------- */
 app.use(require('./routes/authRoute'));
-app.use(require('./routes/DnsRoute'));
 app.use('/user', require('./routes/userRoute'))
+
+
+app.use('/houseWork', require('./routes/HouseWorkRoute'));
 
 
 // CATCH ALL HANDLER
