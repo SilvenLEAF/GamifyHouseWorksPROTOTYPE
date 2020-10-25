@@ -28,7 +28,8 @@ function SignedInFooterLinks() {
       <div>
         <div className="myFooterIcons">
           <Link to="/search" >
-          <i className="fa fa-cogs"></i> DNS
+            {/* <img src="/images/gamepad/svg" alt="Gamepad" id="footerGamepad" /> */}
+            <i className="fa fa-gamepad"></i> Gamify
           </Link>
         </div>          
       </div>
