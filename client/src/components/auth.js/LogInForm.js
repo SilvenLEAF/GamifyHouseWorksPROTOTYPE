@@ -72,7 +72,7 @@ function LogInForm() {
 
   return (
     <div className="container myAuthForm" >
-      <div className="myAuthAppName">Domain Checker</div>
+      <div className="myAuthAppName">Gamify HouseWorks</div>
       <div className="myAuthTitle">Log in to your account</div>
       <p className="center-align red-text"> { error } </p>
 

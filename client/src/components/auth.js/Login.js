@@ -80,7 +80,7 @@ function Login() {
 
   return (
     <div className="container myAuthDoor" >
-      <div className="myAuthAppName">Domain Checker</div>
+      <div className="myAuthAppName">Gamify HouseWorks</div>
       <div className="myAuthTitle">Log in to your account</div>
 
 

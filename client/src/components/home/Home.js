@@ -20,7 +20,7 @@ function Home() {
       <div id="myLandingIcon"></div>
       <div className="myLandingContentHolder">
         <div id="myLandingTitle" className="pageTitle">
-          DOMAIN Checker
+          Gamify HouseWorks
         </div>
         
         <div className="myLandingDescription">
