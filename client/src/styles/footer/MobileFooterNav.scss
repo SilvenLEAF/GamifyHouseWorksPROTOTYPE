@@ -37,12 +37,23 @@
       font-family: Dosis, Aladin, sans-serif;
       font-size: 140%;
       color: $bodyBG;
+   
+    }
+
+    .myFooterIcons.myGamepadHolder {
+      width: 80px;
+      height: 80px;
+      background-color: $bodyBG;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
 
 
-      i.fa.fa-gamepad, i.fa.fa-gamepad-alt {
-        margin: 0;
-        font-size: 270%;
-
+      #footerGamepad {
+        width: 50px;
+        
       }
    
     }
