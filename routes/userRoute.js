@@ -2,15 +2,16 @@ const router = require('express').Router();
 const userController = require('../controllers/userController');
 
 
+const isLoggedin = require('../middlewares/isLoggedin');
+const DeleteAccount = require('../middlewares/DeleteAccount')
+const UpdateAccount = require('../middlewares/UpdateAccount')
+
+
 
 
 // ---------------------GET LOGGED IN USER
-router.get('/', (req, res, next)=>{  
-  if(req.user){
-    res.json({ user: req.user })
-  } else {
-    res.json({ msg: `Not logged in` })
-  }
+router.get('/', isLoggedin, (req, res, next)=>{    
+    res.json({ user: req.user })  
 })
 
 
@@ -18,8 +19,8 @@ router.get('/', (req, res, next)=>{
 
 
 router.get('/all', userController.get_all_users);
-router.delete('/', userController.delete_account);
-router.put('/', userController.update_profile);
+router.delete('/', DeleteAccount, userController.delete_account);
+router.put('/', UpdateAccount, userController.update_profile);
 
 
 

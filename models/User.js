@@ -100,6 +100,10 @@ const UserSchema = new mongoose.Schema({
   username: String,
   profileImage: String,
   createdAt: String,
+  role: {
+    type: String,
+    default: 'user',
+  },
 
   score: {
     type: Number,
