@@ -4,17 +4,12 @@
   "description": "Gamify your boring chores and super boring HouseWorks!!!",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "heroku-postbuild": "cd client && npm install && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SilvenLEAF/GamifyHouseWorks.git"
   },
-  "keywords": [
-    "GamifyHouseWorks"
-  ],
   "author": "SilvenLEAF",
   "license": "MIT",
   "bugs": {
@@ -27,7 +22,7 @@
     "cookie-session": "^1.4.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.10.9",
+    "mongoose": "^5.10.10",
     "passport": "^0.4.1",
     "passport-facebook": "^3.0.0",
     "passport-github": "^1.1.0",
